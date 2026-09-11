@@ -93,4 +93,25 @@ function createHearts() {
             heart.remove();
         }, 6000);
     }
+}/* =========================================
+   MUSIC PLAYER
+========================================= */
+
+function toggleMusic() {
+
+    const music = document.getElementById("ourSong");
+    const button = document.querySelector(".music-btn");
+
+    if (music.paused) {
+
+        music.play();
+
+        button.textContent = "⏸ Pause Our Song";
+
+    } else {
+
+        music.pause();
+
+        button.textContent = "🎵 Play Our Song";
+    }
 }
